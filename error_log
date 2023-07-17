@@ -1,0 +1,6 @@
+[Mon Jul 17 23:01:01.913606 2023] [php:warn] [pid 95295] [client 127.0.0.1:53022] PHP Warning:  Undefined variable $array in /Users/mac/www/barber.loc/helpers/router.php on line 24
+[Mon Jul 17 23:01:01.917100 2023] [php:warn] [pid 95295] [client 127.0.0.1:53022] PHP Warning:  Trying to access array offset on value of type null in /Users/mac/www/barber.loc/helpers/router.php on line 24
+[Mon Jul 17 23:01:01.917145 2023] [php:warn] [pid 95295] [client 127.0.0.1:53022] PHP Warning:  Undefined variable $array in /Users/mac/www/barber.loc/helpers/router.php on line 25
+[Mon Jul 17 23:01:01.917159 2023] [php:warn] [pid 95295] [client 127.0.0.1:53022] PHP Warning:  Trying to access array offset on value of type null in /Users/mac/www/barber.loc/helpers/router.php on line 25
+[Mon Jul 17 23:01:01.917170 2023] [php:warn] [pid 95295] [client 127.0.0.1:53022] PHP Warning:  Undefined variable $array in /Users/mac/www/barber.loc/helpers/router.php on line 26
+[Mon Jul 17 23:01:01.917180 2023] [php:warn] [pid 95295] [client 127.0.0.1:53022] PHP Warning:  Trying to access array offset on value of type null in /Users/mac/www/barber.loc/helpers/router.php on line 26
