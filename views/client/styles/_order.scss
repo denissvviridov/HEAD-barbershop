@@ -1,3 +1,22 @@
-.order_wrap{
-display: flex;
-}
+.order {
+  display: flex;
+  gap: 10px;
+
+
+
+
+  .order__wrap-info{
+    width: 200px;
+    height: 400px;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+
+
+  }
+
+
+

@@ -59,6 +59,11 @@ class Admin extends Container
         }
     }
 
+    public function admin()
+    {
+
+    }
+
 
     public function prof()
     {
@@ -88,18 +93,37 @@ class Admin extends Container
             }
         }
 
+        $pdo = $this->connectDB();
+        $a = $pdo->prepare('select * from employees');
+        $a->execute();
+        $array = $a->fetchAll(PDO::FETCH_ASSOC);
 
 
         if (isset($_SESSION['k']) && $_SESSION['k'] == true) {
             $twig = $this->twig();
-            $page = $twig->render('admin/pages/prof.twig');
+            $page = $twig->render('admin/pages/prof.twig', ['employees' => $array]);
             $page = $twig->render('admin/pages/dashboard.twig', ['content' => $page]);
             echo $page;
         } else {
             echo 'Not found';
         }
 
-}
+    }
+
+    public function delete()
+    {
+
+        $employee_delete = ARGUMENT;
+        $pdo = $this->connectDB();
+        $a = $pdo->prepare('delete from employees where employees.id = ? limit 1');
+        $a->bindParam(1, $employee_delete);
+        $a->execute();
+
+        header('location: /@admin/prof');
+
+
+    }
+
     public function exit()
     {
         unset($_SESSION['k']);

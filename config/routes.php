@@ -16,5 +16,6 @@ $routes = [
     '@admin/booking'=>'admin|booking',
     '@admin/callback'=>'admin|callback',
     '@admin/prof'=>'admin|prof',
+    '@admin/prof/.*'=>'admin|delete',
     '@admin/exit'=>'admin|exit'
 ];

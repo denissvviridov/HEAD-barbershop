@@ -11,14 +11,37 @@
 
             <label for="photo">
                 Загрузите фото мастера
-                <input id="photo" type="file" name="image" >
+                <input id="photo" type="file" name="image">
             </label>
-
-
-
             <button type="submit" name="add_employee">Добавить мастера</button>
-
         </form>
+
+
+    </fieldset>
+
+    <fieldset>
+        <legend><h1>Список сотрудников</h1></legend>
+        <div class="employees_list">
+            {% for item in employees %}
+                <div class="item">
+                    <div class="item_name">
+                        Имя: {{ item.name }}
+                    </div>
+
+                    <div class='item_experience'>
+                        Опыт барбера: {{ item.experience }}
+                    </div>
+
+                    <div class="item_img">
+                        <img src="/uploads/{{ item.photo }}" alt="{{ item.name }}">
+                    </div>
+
+                    <div class="item_delete">
+                        <a href="/@admin/prof/{{item.id}}">Удалить барбера</a>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
 
     </fieldset>
 

@@ -8,7 +8,6 @@
 
 a {
   text-decoration: none;
-  color: white;
 }
 
 .default_page {
@@ -17,7 +16,7 @@ a {
 }
 
 .container {
-  max-width: 90%;
+  max-width: 1170px;
   margin: 0 auto;
   padding-top: 50px;
   padding-bottom: 50px;
@@ -292,16 +291,15 @@ a {
 }
 .prof .employees_wrap .employee .employee_img {
   width: 100%;
-  height: 200px;
+  height: 150px;
 }
 .prof .employees_wrap .employee .employee_img img {
   width: 100%;
-  height: auto;
+  height: 160%;
   border-radius: 10px;
 }
 .prof .employees_wrap .employee .employee_info {
   width: 100%;
-  height: 250px;
   text-align: center;
   margin-top: 50px;
 }
@@ -315,8 +313,17 @@ a {
   color: darkorange;
 }
 
-.order_wrap {
+.order {
   display: flex;
+  gap: 10px;
+}
+.order .order__wrap-info {
+  width: 200px;
+  height: 400px;
+}
+.order .order__wrap-info img {
+  width: 100%;
+  height: auto;
 }
 
 /*# sourceMappingURL=style.css.map */

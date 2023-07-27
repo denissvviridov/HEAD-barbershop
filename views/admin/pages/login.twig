@@ -6,19 +6,26 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="/views/admin/styles/style.css">
-
 </head>
 <body>
 
 <section  class="login_page">
     <form action="/@admin/login" method="post">
-        <input id="admin_login" type="text" placeholder="Enter you login" name="login">
-        <input id="admin_password" type="password" placeholder="Enter you password" name="password">
-        <button name="entry" id="entry" type="submit">Log in</button>
+        <div class="mb-3">
+            <label for="admin_login" class="form-label"> Login</label>
+            <input type="text" class="form-control" id="admin_login" name="login">
+        </div>
+        <div class="mb-3">
+            <label for="admin_password" class="form-label">Password</label>
+            <input type="password" class="form-control" id="admin_password" name="password">
+        </div>
+        <button name="entry" id="entry" type="submit" class="btn  btn-light">Log in</button>
     </form>
 
 </section>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 
 </body>
 </html>

@@ -1,34 +1,26 @@
 <div class="default_page">
-    <h1>Order page</h1>
-    <a href="/">Вернуться назад</a>
+    <div class="container">
+        <a class="back_link" href="/">Вернуться назад</a>
 
-    {% for info in name %}
-        <div class="order_wrap">
-            <div>
-                <div class="wrap_photo">
-                    <img src="/uploads/{{ info.photo }}" alt="">
+        {% for info in name %}
+            <form action="" method="post">
+                <div class="order">
+                    <div class="order__wrap-info">
+                            <img src="/uploads/{{ info.photo }}" alt="">
+                    </div>
+
+                    <fieldset>
+                        <legend>Хочу записаться к барберу {{ info.name }}</legend>
+                        <form action="" method="post">
+                            <input type="date">
+                            <input type="time">
+                        </form>
+
+                    </fieldset>
                 </div>
-                <h1>{{ info.name }}</h1>
-                <h2>{{ info.experience }}</h2>
-            </div>
+            </form>
 
-            <fieldset>
-                <legend>Хочу записаться к {{ info.name }}</legend>
-                <form action="" method="post">
+        {% endfor %}
+    </div>
 
-                    <input type="date">
-                    <input type="time">
-                </form>
-
-            </fieldset>
-
-        </div>
-
-
-
-
-
-
-
-    {% endfor %}
 </div>
