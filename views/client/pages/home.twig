@@ -1,0 +1,70 @@
+<div class="default_page main">
+
+    <div class="container">
+        <div class="home">
+            <div class="home__title">ВИ В ЦЕНТРІ УВАГИ!</div>
+            <div class="home__description">ЯКІСТЬ БЕЗ КОМПРОМІСІВ, ТОМУ ЩО ДЛЯ НАС ЦЕ ВАЖЛИВО.</div>
+            <div class="home__btn-wrap">
+                <button class="btn btn__first">Записатись</button>
+                <button class="btn btn__second">Подзвоніть нам</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="default_page works">
+    <div class="container">
+        <div class="works__title">НАШІ РОБОТИ</div>
+        <div class="carousel">
+            <div class="img_wrap" data-id="1">
+               <img  src="/uploads/1.jpeg" alt="">
+            </div>
+            <div class="img_wrap" data-id="2">
+                <img src="/uploads/2.jpeg" alt="">
+            </div>
+            <div class="img_wrap" data-id="3">
+                <img src="/uploads/3.jpeg" alt="">
+            </div>
+             <div class="img_wrap" data-id="4">
+                <img src="/uploads/4.jpeg" alt="">
+            </div>
+            <div class="img_wrap" data-id="5">
+                <img src="/uploads/5.jpeg" alt="">
+            </div>
+        </div>
+        <div class="dots_wrap">
+            <a href=""></a>
+            <a href=""></a>
+            <a href=""></a>
+            <a href=""></a>
+            <a href=""></a>
+        </div>
+    </div>
+</div>
+
+<div class="default_page prof">
+    <div class="container">
+        <div class="employees_wrap">
+            {% for employee in employees %}
+                <div class="employee">
+                       <div class="employee_img">
+                           <img src="uploads/{{ employee.photo }}" alt="{{ employee.name }}">
+                       </div>
+
+                        <div class="employee_info">
+                            <div class="employee_name">
+                                <h2>{{ employee.name }}</h2>
+                            </div>
+
+                            <div class="employee_experience">
+                              Опыт:  {{ employee.experience }}
+                            </div>
+                        </div>
+                    <a href="/order/to/{{ employee.id }}" class="btn btn_booking">Записаться  к мастеру</a>
+                </div>
+            {% endfor %}
+
+        </div>
+    </div>
+</div>
+

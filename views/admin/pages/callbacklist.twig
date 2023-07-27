@@ -1,0 +1,35 @@
+<div>
+
+
+    <fieldset>
+        <legend><h1>Запросы на звонок</h1></legend>
+        <table>
+            <thead>
+            <tr>
+                <td>Дата подачи:</td>
+                <td>Имя:</td>
+                <td>Номер телефона:</td>
+            </tr>
+            </thead>
+            <tbody>
+
+                {% for elem in list %}
+                    <tr>
+                        <td>{{ elem.date }}</td>
+                        <td>{{ elem.name }}</td>
+                        <td>{{ elem.number }}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+
+
+
+        </table>
+    </fieldset>
+
+    <ul>
+
+    </ul>
+
+
+</div>

@@ -2,13 +2,13 @@
 $uri = trim(parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH), '/');
 
 
-if ($uri == '') {
+if (empty($uri)) {
     $array = explode('|', $routes['home']);
 } else {
-    $section = explode('|', $routes[$uri]);
+    $section = explode('/', $uri);
 
     if (count($section) == 3) {
-        $uri = $section[0] . '/' . $section[1] . '/.*';
+        $uri = $section[0].'/'.$section[1].'/.*';
         define('ARGUMENT', $section[2]);
     }
 

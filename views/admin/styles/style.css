@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.login_page {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, #caffea, #5ad4ff);
+}
+
+.panel {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+.panel .menu_block {
+  width: 20%;
+  height: 100vh;
+  background: linear-gradient(#f18e27, #3d170a);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.panel .menu_block .menu {
+  width: 60%;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.panel .menu_block .menu .link {
+  padding: 10px;
+}
+.panel .menu_block .menu .link:hover {
+  background: white;
+  color: black;
+  transition: 0.2s;
+}
+.panel .menu_block .menu .link:last-child {
+  margin-top: 100px;
+}
+.panel .content_block {
+  width: 80%;
+  height: 100vh;
+  overflow: auto;
+  background: #fff9ee;
+  padding: 30px;
+}
+.panel .content_block fieldset {
+  padding: 25px;
+  border: 2px dashed lightgrey;
+}
+.panel .content_block table {
+  width: 100%;
+}
+.panel .content_block table thead td {
+  background: black;
+  color: white;
+  padding: 10px;
+  border: 1px solid white;
+  text-align: center;
+}
+.panel .content_block table tbody tr:nth-child(even) {
+  background: #ccccef;
+}
+.panel .content_block table tbody td {
+  padding-top: 10px;
+  padding-left: 5px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid grey;
+}
+
+.employees_form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/*# sourceMappingURL=style.css.map */

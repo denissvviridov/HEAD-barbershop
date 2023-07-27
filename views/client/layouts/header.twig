@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HEAD barber</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tektur:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/views/client/styles/style.css">
+</head>
+<body>
+
+<div class="overlay">
+    <form action="/home/callback" method="post" class="modal_form">
+        <span class="close">&#10008;</span>
+        <input type="text" name="name" id="name" placeholder="Введите свое Имя:">
+        <input type="tel" name="number" id="number" placeholder="Введите свой номер телефона:">
+        <button name="btn_call" type="submit" id="btn_callback">ПЕРЕЗВОНИТЬ МНЕ</button>
+    </form>
+</div>
+
+
+
+<header class="header">
+    <nav class="header__menu">
+        <a class="link" href="/">Home</a>
+        <a class="link" href="/about">About</a>
+        <a class="link" href="/contacts">Contacts</a>
+    </nav>
+
+    <div class="header__logo animate__animated">
+        <img class="header__img" src="/views/client/layouts/images/logo-removebg-preview.png" alt="">
+    </div>
+
+    <div class="header__info">
+        <div class="address">
+            м.Дніпро вул.Троїцька 14
+            +380 73 747 47 33
+        </div>
+
+        <div class="work-time">
+            Працюємо:
+            10:00 - 20:00
+        </div>
+    </div>
+</header>
+
+
+

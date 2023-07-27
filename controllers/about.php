@@ -3,7 +3,7 @@
 
 
 
-class About {
+class About extends Container{
 
 
 
